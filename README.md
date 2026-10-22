@@ -21,9 +21,27 @@ plugins/<name>/                   one directory per plugin
   ...                             whatever the plugin ships (.mcp.json, skills, …)
 ```
 
+## Development
+
 Validate after a change:
 
 ```
 claude plugin validate .
 claude plugin validate plugins/<name>
 ```
+
+Try a plugin from the working tree, for one session only:
+
+```
+claude --plugin-dir plugins/<name>
+```
+
+Disable the installed copy (`/plugin`) while doing this, or its tools show up
+twice.
+
+Don't add the checkout as a marketplace (`/plugin marketplace add .`) if you
+also use the published one. Both are named `lukas-weiss-plugins`, and Claude
+Code allows only one source per marketplace name: adding the second fails with
+*"its source doesn't match its extraKnownMarketplaces entry"*. To switch, edit
+or remove the `lukas-weiss-plugins` entry under `extraKnownMarketplaces` in
+`~/.claude/settings.json`.

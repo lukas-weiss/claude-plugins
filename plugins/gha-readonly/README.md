@@ -47,11 +47,7 @@ Its tools show up as `mcp__plugin_gha-readonly_actions__*`.
 /plugin install gha-readonly@lukas-weiss-plugins
 ```
 
-From a local checkout instead:
-
-```
-/plugin marketplace add ~/projects/github/claude-plugins
-```
+To work on the plugin itself, see [Development](../../README.md#development).
 
 If you had added the same server by hand (`claude mcp add … github-actions`),
 remove that entry so the tools don't appear twice:
