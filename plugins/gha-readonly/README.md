@@ -66,4 +66,6 @@ applies.
 ## When to drop it
 
 If the official `github` plugin starts loading the Actions toolset, or lets
-you choose toolsets, this plugin is redundant — uninstall it.
+you choose toolsets, this plugin is redundant — uninstall it. That change is
+proposed in
+[anthropics/claude-plugins-official#6859](https://github.com/anthropics/claude-plugins-official/issues/6859).
