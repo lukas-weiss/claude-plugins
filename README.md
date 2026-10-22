@@ -39,9 +39,10 @@ claude --plugin-dir plugins/<name>
 Disable the installed copy (`/plugin`) while doing this, or its tools show up
 twice.
 
-Don't add the checkout as a marketplace (`/plugin marketplace add .`) if you
-also use the published one. Both are named `lukas-weiss-plugins`, and Claude
-Code allows only one source per marketplace name: adding the second fails with
-*"its source doesn't match its extraKnownMarketplaces entry"*. To switch, edit
-or remove the `lukas-weiss-plugins` entry under `extraKnownMarketplaces` in
-`~/.claude/settings.json`.
+The checkout and the published repo are the same marketplace,
+`lukas-weiss-plugins`, and Claude Code keeps one source per name. Running
+`/plugin marketplace add` with the other source switches it over, and
+installed plugins then update from there. If `~/.claude/settings.json` pins a
+source under `extraKnownMarketplaces`, switching fails with *"its source
+doesn't match its extraKnownMarketplaces entry"*; change or remove that entry
+first.
