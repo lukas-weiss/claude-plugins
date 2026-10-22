@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "lukas-weiss-plugins",
+  "description": "Personal Claude Code plugins by Lukas Weiß",
+  "owner": {
+    "name": "Lukas Weiß"
+  },
+  "plugins": [
+    {
+      "name": "gha-readonly",
+      "description": "Unofficial. Read-only access to GitHub Actions workflow runs and logs via GitHub's MCP server, e.g. to check that CI passed before merging.",
+      "category": "development",
+      "source": "./plugins/gha-readonly"
+    }
+  ]
+}

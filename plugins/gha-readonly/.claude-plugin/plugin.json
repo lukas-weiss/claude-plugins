@@ -1,0 +1,16 @@
+{
+  "name": "gha-readonly",
+  "version": "0.1.0",
+  "description": "Unofficial. Read-only access to GitHub Actions workflow runs and logs via GitHub's MCP server, e.g. to check that CI passed before merging.",
+  "author": {
+    "name": "Lukas Weiß"
+  },
+  "license": "MIT",
+  "keywords": [
+    "github-actions",
+    "ci",
+    "mcp",
+    "read-only"
+  ],
+  "privacyPolicyUrl": "https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement"
+}

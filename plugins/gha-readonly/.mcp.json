@@ -1,0 +1,9 @@
+{
+  "actions": {
+    "type": "http",
+    "url": "https://api.githubcopilot.com/mcp/x/actions/readonly",
+    "headers": {
+      "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+    }
+  }
+}
